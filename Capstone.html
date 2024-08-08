@@ -45,15 +45,15 @@
   .video-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin-top: 20px;
-    overflow-x: auto;
+    gap: 20px; /* Adds space between video sections */
   }
 
   .video-section {
-    margin: 10px;
-    text-align: left;
+    flex: 1;
     max-width: 320px;
+    text-align: left;
   }
 
   .video-section h3 {
@@ -72,12 +72,17 @@
   a:hover {
     text-decoration: underline;
   }
+
+  .video-section iframe {
+    width: 100%;
+    height: 200px;
+    max-width: 320px;
+  }
 </style>
 </head>
 <body>
   <div class="link-container">
     <a href="https://drive.google.com/file/d/1HncjNncaT2fx-i-bG0lYRpciwXFifbLw/view?usp=sharing" target="_blank" class="button">Resume in Kikuyu</a>
-
     <a href="https://drive.google.com/file/d/1A3S_8PBKPgc1wC6HsyGi4PHFt503Pybq/view?usp=sharing" class="button">Resume in Kiswahili</a>
     <a href="https://drive.google.com/file/d/1Bus-eNX9Rrxgyy3ekUqM8x1J8xTmIyld/view?usp=sharing" class="button">Resume in English</a>
     <a href="https://drive.google.com/file/d/1XYI6kS5aP-HBORxogstVzhmlJLUa2Yjr/view?usp=sharing" class="button">Autobiography Essay</a>
@@ -89,8 +94,7 @@
     <a href="https://www.linkedin.com/in/simon-wanjihia-618a25298/" class="button">LinkedIn</a>
     <a href="https://twitter.com/simonnjoroge" class="button">Twitter</a>
     <a href="https://github.com/wanjihiasimon" class="button">GitHub</a>
-    <a href="https://www.facebook.com/profile.php?id=100082813431966" class="button">facebook</a>
-    
+    <a href="https://www.facebook.com/profile.php?id=100082813431966" class="button">Facebook</a>
   </div>
 
   <div class="container">
@@ -99,49 +103,35 @@
         <h3>Innovation in Healthcare</h3>
         <iframe 
             src="https://drive.google.com/file/d/1KGkMUnLWJHASi6bI2Rc8StMiMwGJ4G0G/preview" 
-            width="300" 
-            height="200" 
             allow="autoplay; encrypted-media" 
             allowfullscreen>
         </iframe>
-      </div>
-    </div>
-</div>
-
-        <p>This video explores innovation of Machine Learning-Powered Cyber Threat Detection and Prevention System in healthcare.Click links below to read abstacts in three languages and powerpoint presentation.</p>
-        <a href="https://drive.google.com/file/d/1Zh-BKCRGFWk4ix2H1Q08zXowzVuZqBkp/view?usp=sharing">Abstracts in English,Kiswahili,kikuyu</a><br><br>
-        <a href="https://docs.google.com/presentation/d/1EjlsNyKj1u8Svex2SJh1_rvpBvN27pSb/edit?usp=sharing&ouid=109015412739740224646&rtpof=true&sd=true">Innovation in healthcare PPT</a>
+        <p>This video explores innovation of Machine Learning-Powered Cyber Threat Detection and Prevention System in healthcare. Click links below to read abstracts in three languages and PowerPoint presentation.</p>
+        <a href="https://drive.google.com/file/d/1Zh-BKCRGFWk4ix2H1Q08zXowzVuZqBkp/view?usp=sharing">Abstracts in English, Kiswahili, Kikuyu</a><br><br>
+        <a href="https://docs.google.com/presentation/d/1EjlsNyKj1u8Svex2SJh1_rvpBvN27pSb/edit?usp=sharing&ouid=109015412739740224646&rtpof=true&sd=true">Innovation in Healthcare PPT</a>
       </div>
 
-     <div class="video-section">
-    <h3>Aspect of African Culture</h3>
-    <iframe 
-        src="https://drive.google.com/file/d/1_0mPsowoWJ5WE9AnP7_9j52j5zuPTsQu/preview" 
-        width="300" 
-        height="200" 
-        allow="autoplay; encrypted-media" 
-        allowfullscreen>
-    </iframe>
-</div>
-
-        <p>This video highlights unique aspect of African culture using oral tradition.Click links below to read abstacts in three languages and powerpoint presentation.</p>
-        <a href="https://drive.google.com/file/d/1BJY09hNagxNUF3WLILyQgtiAOj7cp4UL/view?usp=sharing">Abstracts in English,kiswahili,kikuyu</a><br><br>
+      <div class="video-section">
+        <h3>Aspect of African Culture</h3>
+        <iframe 
+            src="https://drive.google.com/file/d/1_0mPsowoWJ5WE9AnP7_9j52j5zuPTsQu/preview" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+        </iframe>
+        <p>This video highlights unique aspects of African culture using oral tradition. Click links below to read abstracts in three languages and PowerPoint presentation.</p>
+        <a href="https://drive.google.com/file/d/1BJY09hNagxNUF3WLILyQgtiAOj7cp4UL/view?usp=sharing">Abstracts in English, Kiswahili, Kikuyu</a><br><br>
         <a href="https://docs.google.com/presentation/d/1lDeibX10MsKJJ3LrWIVlPX7omQHix0MZ/edit?usp=sharing&ouid=109015412739740224646&rtpof=true&sd=true">Aspect of African Culture PPT</a>
       </div>
 
       <div class="video-section">
-    <h3>Modern Society Challenges</h3>
-    <iframe 
-        src="https://drive.google.com/file/d/1te9OP7WG3lAp3nK-TAD1pEBoq3Fv8NFZ/preview" 
-        width="300" 
-        height="200" 
-        allow="autoplay; encrypted-media" 
-        allowfullscreen>
-    </iframe>
-</div>
-
-        <p>This video addresses modern society challenges and provides potential solutions.Click links below to read abstacts in three languages.</p>
-        <a href="https://drive.google.com/file/d/1kvBtDsO6ao1GU85Nz3O4Kf8p-x7j766F/view?usp=sharing">Abstracts in English, Kiswahili, kikuyu</a>
+        <h3>Modern Society Challenges</h3>
+        <iframe 
+            src="https://drive.google.com/file/d/1te9OP7WG3lAp3nK-TAD1pEBoq3Fv8NFZ/preview" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+        </iframe>
+        <p>This video addresses modern society challenges and provides potential solutions. Click links below to read abstracts in three languages.</p>
+        <a href="https://drive.google.com/file/d/1kvBtDsO6ao1GU85Nz3O4Kf8p-x7j766F/view?usp=sharing">Abstracts in English, Kiswahili, Kikuyu</a>
       </div>
     </div>
   </div>
